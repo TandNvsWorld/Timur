@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+#include <conio.h>
+
+int main()
+{
+     double a,b,c,d,x1=0,x2=0;
+     setlocale(LC_CTYPE, "Russian_Russia.1251");
+     printf("Введите a: "); scanf("%lf", &a);
+     printf("Введите b: "); scanf("%lf", &b);
+     printf("Введите c: "); scanf("%lf", &c);
+     if (a==0) printf("Корней нет!/n");
+     else
+     {
+          d = pow(b,2)-4*a*c;
+          if (d<0) printf("Корней нет!");
+          else if (d==0)
+          {
+              if (d==0) x1=-b/(2*a);
+              if (b==0 && c==0) x1=0;
+              printf("Уравнение имеет один корень: x=%lf", x1);
+          }
+          else
+          {
+          x1=(-b+sqrt(d))/(2*a);
+          x2=(-b-sqrt(d))/(2*a);
+          printf ("Уравнение имеет два корня: 1) x1=%lf 2)x2=%lf ",x1,x2);
+          }
+      }
+      return 0;
+}
