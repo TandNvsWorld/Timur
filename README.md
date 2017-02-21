@@ -1,3 +1,2 @@
 # ArimaPojects
 1)LABWORK01(READING "DATA.DAT") UPLOADED!!!
-2)
